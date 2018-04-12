@@ -28,7 +28,8 @@ tasks/Task.cpp, and will be put in the viso2_evaluation namespace.
     {
 	friend class TaskBase;
     protected:
-
+        bool gt_initial, reset;
+        base::samples::RigidBodyState gt_pose, gt_initial_pose, odo_pose, odo_in_world_pose, diff_pose;
 
 
     public:

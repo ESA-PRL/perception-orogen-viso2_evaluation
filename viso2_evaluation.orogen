@@ -42,6 +42,9 @@ task_context "Task" do
 
     input_port("groundtruth_pose", "/base/samples/RigidBodyState").
         doc "pose coming from component giving groundtruth pose"
+    
+    input_port("reset", "bool").
+        doc "reset the pose comming from groundtruth"
 
     # An output port, i.e. an object to which the component pushes data so that
     # it is transmitted to other components' inputs
@@ -50,6 +53,9 @@ task_context "Task" do
     # if this output is connected to an input or not.
     output_port("diff_pose", "/base/samples/RigidBodyState").
         doc "difference between groundtruth and odometry pose, i.e, accumulated drift"
+
+    output_port("odometry_in_world_pose", "/base/samples/RigidBodyState").
+        doc "odometry pose transformed into the groundtruth reference frame"
 
     # If you want that component's updateHook() to be executed when the "input"
     # port gets data, uncomment this and comment the 'periodic' line

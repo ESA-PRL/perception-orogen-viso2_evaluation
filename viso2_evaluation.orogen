@@ -62,6 +62,11 @@ task_context "Task" do
         doc "groundtruth pose from vicon"
     output_port("odometry_heading", "double").
         doc "heading angle estimated by vo" 
+    output_port("odometry_roll", "double").
+        doc "roll angle estimated by vo" 
+    output_port("odometry_pitch", "double").
+        doc "pitch angle estimated by vo" 
+
     output_port("ground_truth_heading", "double").
         doc "heading angle from vicon pose"
     output_port("travelled_distance", "double").

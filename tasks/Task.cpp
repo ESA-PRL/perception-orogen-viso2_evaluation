@@ -27,11 +27,7 @@ Task::~Task()
 bool Task::configureHook()
 {
     if (! TaskBase::configureHook())
-        return false;
-    
-    // initialize accum pose 
-    //accum_pose = Eigen::Affine3d::Identity();
-
+        return false; 
     return true;
 }
 bool Task::startHook()
@@ -96,21 +92,23 @@ void Task::updateHook()
         _ground_truth_heading.write(gt_pose.getYaw());
         // output viso heading
         _odometry_heading.write(odo_in_world_pose.getYaw());
-    
+        _odometry_roll.write(odo_in_world_pose.getRoll());
+        _odometry_pitch.write(odo_in_world_pose.getPitch());
+
         // compute travelled distance
         delta_gt_pose.position[0] = gt_pose.position[0] - gt_previous_pose.position[0];
         delta_gt_pose.position[1] = gt_pose.position[1] - gt_previous_pose.position[1];
         delta_gt_pose.position[2] = gt_pose.position[2] - gt_previous_pose.position[2];
         accum_distance += sqrt(pow(delta_gt_pose.position[0],2)+
-                pow(delta_gt_pose.position[1],2)+
-                pow(delta_gt_pose.position[2],2));
+                               pow(delta_gt_pose.position[1],2)+
+                               pow(delta_gt_pose.position[2],2));
         //output the travelled distance
         _travelled_distance.write(accum_distance);
 
         // compute percentage error
         error_norm = sqrt(pow(diff_pose.position[0],2)+
-                pow(diff_pose.position[1],2));
-                //pow(diff_pose.position[2],2));
+                          pow(diff_pose.position[1],2));
+                          //pow(diff_pose.position[2],2));
         error_perc = error_norm/accum_distance;
         // output percentage error
         _perc_error.write(error_perc);

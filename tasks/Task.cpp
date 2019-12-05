@@ -37,6 +37,9 @@ bool Task::configureHook()
 {
     if (! TaskBase::configureHook())
         return false; 
+
+    gt_initial = false;
+
     return true;
 }
 bool Task::startHook()
@@ -54,76 +57,39 @@ void Task::updateHook()
         gt_initial = false;
     }
 
-    if (!gt_initial)
+    if (!gt_initial && _groundtruth_pose_not_aligned.read(gt_pose_not_aligned) == RTT::NewData)
     {
+        //std::cout << "|||||" << std::endl << "||||||" << "[viso2_eval] initialized stuff" << std::endl << "pos_x: " << gt_pose_not_aligned.position[0] << std::endl;
         gt_initial = true;
-        gt_initial_pose = gt_pose;
-        gt_previous_pose = gt_pose;
+        gt_initial_pose = gt_pose_not_aligned;
+        gt_previous_pose = gt_pose_not_aligned;
 
         // initialize accum pose to 0
         accum_distance = 0;
     }
 
-    /*
-    if (_reset.read(reset) == RTT::NewData)
+    if (_groundtruth_pose_not_aligned.read(gt_pose_not_aligned) == RTT::NewData && gt_initial)
     {
-        gt_initial = false;
-    }
-
-    if (_groundtruth_pose.read(gt_pose) == RTT::NewData)
-    {
-        if (!gt_initial)
-        {
-            gt_initial = true;
-            gt_initial_pose = gt_pose;
-            gt_previous_pose = gt_pose;
-
-            // initialize accum pose to 0
-            accum_distance = 0;
-        }
-    }
-
-    if (_odometry_pose.read(odo_pose) == RTT::NewData && gt_initial)
-    {
-        // add initial pose to viso pose
-        odo_in_world_pose.position[0]= (cos(gt_initial_pose.getYaw())*odo_pose.position[0] - sin(gt_initial_pose.getYaw())*odo_pose.position[1] + gt_initial_pose.position[0]);
-        odo_in_world_pose.position[1]= (sin(gt_initial_pose.getYaw())*odo_pose.position[0] + cos(gt_initial_pose.getYaw())*odo_pose.position[1] + gt_initial_pose.position[1]);
-        odo_in_world_pose.position[2]= odo_pose.position[2] + gt_initial_pose.position[2];
-        // add initial orientation to viso orientation
-        Eigen::Quaternion <double> attitude(Eigen::AngleAxisd(gt_initial_pose.getYaw()+odo_pose.getYaw(), Eigen::Vector3d::UnitZ())*
-                                            Eigen::AngleAxisd(odo_pose.getPitch(), Eigen::Vector3d::UnitY()) *
-                                            Eigen::AngleAxisd(odo_pose.getRoll(), Eigen::Vector3d::UnitX()));
-        odo_in_world_pose.orientation = attitude;
-        // add time to the output pose
-        odo_in_world_pose.time = odo_pose.time;
-        // write out pose
-        _odometry_in_world_pose.write(odo_in_world_pose);
-
-        // compute diff pose
-        diff_pose.position = gt_pose.position - odo_in_world_pose.position;
-        // compute diff orientation
-        Eigen::Quaternion <double> attitude2(Eigen::AngleAxisd(gt_pose.getYaw()-odo_in_world_pose.getYaw(), Eigen::Vector3d::UnitZ())*
-                                            Eigen::AngleAxisd(gt_pose.getPitch()-odo_in_world_pose.getPitch(), Eigen::Vector3d::UnitY()) *
-                                            Eigen::AngleAxisd(gt_pose.getRoll()-odo_in_world_pose.getRoll(), Eigen::Vector3d::UnitX()));
-        diff_pose.orientation = attitude2;
-        // add time to the output diff pose
-        diff_pose.time = odo_pose.time; 
-        // write out the diff pose
-        _diff_pose.write(diff_pose);
-        
         // output gt pose from vicon
-        _ground_truth_pose.write(gt_pose);
+        _ground_truth_pose.write(gt_pose_not_aligned);
         // output gt heading from vicon
-        _ground_truth_heading.write(gt_pose.getYaw());
+        _ground_truth_heading.write(gt_pose_not_aligned.getYaw());
+
+        /*
         // output viso heading
         _odometry_heading.write(odo_in_world_pose.getYaw());
         _odometry_roll.write(odo_in_world_pose.getRoll());
         _odometry_pitch.write(odo_in_world_pose.getPitch());
+        */
 
+        /*
         // compute travelled distance
-        delta_gt_pose.position[0] = gt_pose.position[0] - gt_previous_pose.position[0];
-        delta_gt_pose.position[1] = gt_pose.position[1] - gt_previous_pose.position[1];
-        delta_gt_pose.position[2] = gt_pose.position[2] - gt_previous_pose.position[2];
+        delta_gt_pose.position[0] = gt_pose_not_aligned.position[0] -gt_previous_pose.position[0];
+        delta_gt_pose.position[1] = gt_pose_not_aligned.position[1] -gt_previous_pose.position[1];
+        delta_gt_pose.position[2] = gt_pose_not_aligned.position[2] -gt_previous_pose.position[2];
+        //std::cout << "d_gt_x: " << delta_gt_pose.position[0] << std::endl;
+        //std::cout << "d_gt_y: " << delta_gt_pose.position[1] << std::endl;
+        //std::cout << "d_gt_z: " << delta_gt_pose.position[2] << std::endl;
         accum_distance += sqrt(pow(delta_gt_pose.position[0],2)+
                                pow(delta_gt_pose.position[1],2)+
                                pow(delta_gt_pose.position[2],2));
@@ -139,11 +105,11 @@ void Task::updateHook()
         _perc_error.write(error_perc);
 
         // update previous gt pose
-        gt_previous_pose.position[0] = gt_pose.position[0];
-        gt_previous_pose.position[1] = gt_pose.position[1];
-        gt_previous_pose.position[2] = gt_pose.position[2];
+        gt_previous_pose.position[0] = gt_pose_not_aligned.position[0];
+        gt_previous_pose.position[1] = gt_pose_not_aligned.position[1];
+        gt_previous_pose.position[2] = gt_pose_not_aligned.position[2];
+        */
     }
-    */
 }
 void Task::errorHook()
 {
@@ -185,14 +151,15 @@ void Task::computeOutputs()
                                             Eigen::AngleAxisd(gt_pose.getRoll()-odo_in_world_pose.getRoll(), Eigen::Vector3d::UnitX()));
         diff_pose.orientation = attitude2;
         // add time to the output diff pose
-        diff_pose.time = odo_pose.time; 
+        diff_pose.time = odo_pose.time;
         // write out the diff pose
         _diff_pose.write(diff_pose);
-        
+
+
         // output gt pose from vicon
-        _ground_truth_pose.write(gt_pose);
+        //_ground_truth_pose.write(gt_pose);
         // output gt heading from vicon
-        _ground_truth_heading.write(gt_pose.getYaw());
+        //_ground_truth_heading.write(gt_pose.getYaw());
         // output viso heading
         _odometry_heading.write(odo_in_world_pose.getYaw());
         _odometry_roll.write(odo_in_world_pose.getRoll());
@@ -210,8 +177,8 @@ void Task::computeOutputs()
 
         // compute percentage error
         error_norm = sqrt(pow(diff_pose.position[0],2)+
-                          pow(diff_pose.position[1],2));
-                          //pow(diff_pose.position[2],2));
+                          pow(diff_pose.position[1],2)+
+                          pow(diff_pose.position[2],2));
         error_perc = error_norm/accum_distance;
         // output percentage error
         _perc_error.write(error_perc);

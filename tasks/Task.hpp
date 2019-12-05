@@ -33,6 +33,11 @@ tasks/Task.cpp, and will be put in the viso2_evaluation namespace.
         base::samples::RigidBodyState odo_in_world_pose, diff_pose, delta_gt_pose, gt_previous_pose;
         double accum_distance, error_norm, error_perc; 
 
+    protected:
+        virtual void groundtruth_poseTransformerCallback(const base::Time &ts, const ::base::samples::RigidBodyState &groundtruth_pose_sample);
+
+        virtual void odometry_poseTransformerCallback(const base::Time &ts, const ::base::samples::RigidBodyState &odometry_pose_sample);
+
     public:
         /** TaskContext constructor for Task
          * \param name Name of the task. This name needs to be unique to make it identifiable via nameservices.
@@ -108,6 +113,8 @@ tasks/Task.cpp, and will be put in the viso2_evaluation namespace.
          * before calling start() again.
          */
         void cleanupHook();
+
+        void computeOutputs();
     };
 }
 

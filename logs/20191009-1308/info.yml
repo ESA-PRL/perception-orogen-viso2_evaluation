@@ -1,0 +1,7 @@
+---
+- time: 20191009-1308
+  cmdline: "/home/marta/rock/gui/vizkit/bin/rock-display "
+  robot_name: default
+  robot_type: default
+  app_name: viso2_evaluation
+  app_dir: "/home/marta/rock/perception/orogen/viso2_evaluation"

@@ -1,0 +1,558 @@
+0.000 [ Info   ][Logger] No ORO_LOGLEVEL environment variable set.
+0.000 [ Info   ][Logger]  OROCOS version '2.8.99' compiled with GCC 5.4.0. Running in GNU/Linux.
+0.000 [ Info   ][Logger] Orocos Logging Activated at level : [ Warning] ( 4 ) 
+0.000 [ Info   ][Logger] Reference System Time is : 13764927609190 ticks ( 13764.9 seconds ).
+0.000 [ Info   ][Logger] Logging is relative to this time.
+0.000 [ Info   ][TypekitRepository::Import] Loading Typekit std.
+0.000 [ Info   ][Logger] Loaded RTT TypeKit/Transport 'std' from 'std-typekit'
+0.002 [ Info   ][TypekitRepository::Import] Loading Transport Typelib:///orogen/std.
+0.003 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /bool
+0.003 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /double
+0.003 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /float
+0.003 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /int16_t
+0.003 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /int32_t
+0.003 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /int64_t
+0.003 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /int8_t
+0.004 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /metadata/TaskContext
+0.004 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /std/string
+0.004 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /std/vector</double>
+0.004 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /uint16_t
+0.004 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /uint32_t
+0.004 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /uint64_t
+0.004 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /uint8_t
+0.004 [ Info   ][Logger] Loaded RTT TypeKit/Transport '/orogen/std/TYPELIB' from 'std-transport-typelib'
+0.007 [ Info   ][TypekitRepository::Import] Loading Transport CORBA:///orogen/std.
+0.007 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /bool
+0.007 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /double
+0.007 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /float
+0.007 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /int16_t
+0.007 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /int32_t
+0.007 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /int64_t
+0.007 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /int8_t
+0.007 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /metadata/TaskContext
+0.007 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /std/string
+0.007 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /std/vector</double>
+0.007 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /uint16_t
+0.007 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /uint32_t
+0.007 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /uint64_t
+0.007 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /uint8_t
+0.008 [ Info   ][Logger] Loaded RTT TypeKit/Transport '/orogen/std/CORBA' from 'std-transport-corba'
+0.013 [ Info   ][TypekitRepository::Import] Loading Transport MQueue:///orogen/std.
+0.013 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /bool
+0.013 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /double
+0.013 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /float
+0.013 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /int16_t
+0.013 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /int32_t
+0.013 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /int64_t
+0.013 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /int8_t
+0.013 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /metadata/TaskContext
+0.013 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /std/string
+0.013 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /std/vector</double>
+0.013 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /uint16_t
+0.013 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /uint32_t
+0.013 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /uint64_t
+0.013 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /uint8_t
+0.013 [ Info   ][Logger] Loaded RTT TypeKit/Transport '/orogen/std/MQueue' from 'std-transport-mqueue'
+0.013 [ Info   ][TypekitRepository::Import] Loading Typekit rtt-types.
+0.013 [ Info   ][TypekitRepository::Import] Loading Transport CORBA://rtt-types.
+0.013 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for ConnPolicy
+0.013 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for TaskContext
+0.013 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for char
+0.013 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for llong
+0.013 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for rt_string
+0.013 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for ullong
+0.013 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for void
+0.013 [ Info   ][TypekitRepository::Import] Loading Transport mqueue://rtt-types.
+0.013 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for char
+0.013 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for llong
+0.013 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for ullong
+0.130 [ Info   ][TypekitRepository::Import] Loading Typekit transformer.
+0.130 [ Info   ][Logger] Loaded RTT TypeKit/Transport 'transformer' from 'transformer-typekit'
+0.131 [ Info   ][TypekitRepository::Import] Loading Transport Typelib:///orogen/transformer.
+0.134 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /std/vector</base/samples/RigidBodyState>
+0.134 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /transformer/ConfigurationState
+0.134 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /transformer/TransformerStatus
+0.134 [ Info   ][Logger] Loaded RTT TypeKit/Transport '/orogen/transformer/TYPELIB' from 'transformer-transport-typelib'
+0.164 [ Info   ][TypekitRepository::Import] Loading Transport CORBA:///orogen/transformer.
+0.164 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /std/vector</base/samples/RigidBodyState>
+0.164 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /transformer/ConfigurationState
+0.164 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /transformer/TransformerStatus
+0.164 [ Info   ][Logger] Loaded RTT TypeKit/Transport '/orogen/transformer/CORBA' from 'transformer-transport-corba'
+0.170 [ Info   ][TypekitRepository::Import] Loading Transport MQueue:///orogen/transformer.
+0.170 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /std/vector</base/samples/RigidBodyState>
+0.170 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /transformer/ConfigurationState
+0.170 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /transformer/TransformerStatus
+0.170 [ Info   ][Logger] Loaded RTT TypeKit/Transport '/orogen/transformer/MQueue' from 'transformer-transport-mqueue'
+0.174 [ Info   ][Thread] Creating Thread for scheduler=ORO_SCHED_OTHER, priority=1, CPU affinity=0, with name='orocosrb_18933'
+0.174 [ Info   ][orocosrb_18933] Thread created with scheduler type 'ORO_SCHED_OTHER', priority 0, cpu affinity 15 and period 0 (PID= 18948 ).
+0.174 [ Info   ][Logger] Creating new TaskContextServer for orocosrb_18933
+0.174 [ Info   ][TaskContextServer()] CTaskContext 'orocosrb_18933' found CORBA Naming Service.
+0.175 [ Info   ][TaskContextServer()] Successfully added CTaskContext 'orocosrb_18933' to CORBA Naming Service.
+0.175 [ Info   ][Thread] Creating Thread for scheduler=ORO_SCHED_OTHER, priority=1, CPU affinity=0, with name='GlobalEngine'
+0.175 [ Info   ][GlobalEngine] Thread created with scheduler type 'ORO_SCHED_OTHER', priority 0, cpu affinity 15 and period 0 (PID= 18949 ).
+0.422 [ Info   ][TypekitRepository::Import] Loading Typekit base.
+0.423 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /std/string
+0.423 [ Info   ][Logger] Loaded RTT TypeKit/Transport 'base' from 'base-typekit'
+0.433 [ Info   ][TypekitRepository::Import] Loading Transport Typelib:///orogen/base.
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /RTT/extras/ReadOnlyPointer</base/samples/frame/Frame>
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /RTT/extras/ReadOnlyPointer</base/samples/frame/FramePair>
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/Affine3d
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/Angle
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/AngleAxisd
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/JointLimits
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/JointState
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/JointState/MODE
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/JointTransform
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/JointTransformVector
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/JointsTrajectory
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/Matrix2d
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/Matrix3d
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/Matrix4d
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/Matrix6d
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/MatrixXd
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/Pose
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/Pressure
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/Quaterniond
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/Temperature
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/Time
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/Trajectory
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/TransformWithCovariance
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/TwistWithCovariance
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/Vector2d
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/Vector3d
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/Vector4d
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/Vector6d
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/VectorXd
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/Waypoint
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/Wrench
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/commands/LinearAngular6DCommand
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/commands/Motion2D
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/commands/Speed6D
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/geometry/Spline<1>
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/geometry/Spline<3>
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/samples/BodyState
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/samples/DepthMap
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/samples/DistanceImage
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/samples/IMUSensors
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/samples/Joints
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/samples/LaserScan
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/samples/Motion2D
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/samples/Pointcloud
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/samples/PoseWithCovariance
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/samples/Pressure
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/samples/RigidBodyAcceleration
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/samples/RigidBodyState
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/samples/Sonar
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/samples/SonarBeam
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/samples/SonarScan
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/samples/Wrench
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/samples/Wrenches
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/samples/frame/Frame
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/samples/frame/FramePair
+0.449 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /base/samples/frame/frame_mode_t
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /std/vector</base/Trajectory>
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /std/vector</base/Vector3d>
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /std/vector</base/Waypoint>
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /std/vector</std/string>
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /std/vector</uint32_t>
+0.450 [ Info   ][Logger] Loaded RTT TypeKit/Transport '/orogen/base/TYPELIB' from 'base-transport-typelib'
+0.450 [ Info   ][TypekitRepository::Import] Loading Transport CORBA:///orogen/base.
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /RTT/extras/ReadOnlyPointer</base/samples/frame/Frame>
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /RTT/extras/ReadOnlyPointer</base/samples/frame/FramePair>
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/Affine3d
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/Angle
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/AngleAxisd
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/JointLimits
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/JointState
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/JointState/MODE
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/JointTransform
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/JointTransformVector
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/JointsTrajectory
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/Matrix2d
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/Matrix3d
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/Matrix4d
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/Matrix6d
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/MatrixXd
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/Pose
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/Pressure
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/Quaterniond
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/Temperature
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/Time
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/Trajectory
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/TransformWithCovariance
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/TwistWithCovariance
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/Vector2d
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/Vector3d
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/Vector4d
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/Vector6d
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/VectorXd
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/Waypoint
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/Wrench
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/commands/LinearAngular6DCommand
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/commands/Motion2D
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/commands/Speed6D
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/geometry/Spline<1>
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/geometry/Spline<3>
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/samples/BodyState
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/samples/DepthMap
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/samples/DistanceImage
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/samples/IMUSensors
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/samples/Joints
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/samples/LaserScan
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/samples/Motion2D
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/samples/Pointcloud
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/samples/PoseWithCovariance
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/samples/Pressure
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/samples/RigidBodyAcceleration
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/samples/RigidBodyState
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/samples/Sonar
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/samples/SonarBeam
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/samples/SonarScan
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/samples/Wrench
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/samples/Wrenches
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/samples/frame/Frame
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/samples/frame/FramePair
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /base/samples/frame/frame_mode_t
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /std/vector</base/Trajectory>
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /std/vector</base/Vector3d>
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /std/vector</base/Waypoint>
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /std/vector</std/string>
+0.450 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /std/vector</uint32_t>
+0.450 [ Info   ][Logger] Loaded RTT TypeKit/Transport '/orogen/base/CORBA' from 'base-transport-corba'
+0.497 [ Info   ][TypekitRepository::Import] Loading Transport MQueue:///orogen/base.
+0.497 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /RTT/extras/ReadOnlyPointer</base/samples/frame/Frame>
+0.497 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /RTT/extras/ReadOnlyPointer</base/samples/frame/FramePair>
+0.497 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/Affine3d
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/Angle
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/AngleAxisd
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/JointLimits
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/JointState
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/JointState/MODE
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/JointTransform
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/JointTransformVector
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/JointsTrajectory
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/Matrix2d
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/Matrix3d
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/Matrix4d
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/Matrix6d
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/MatrixXd
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/Pose
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/Pressure
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/Quaterniond
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/Temperature
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/Time
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/Trajectory
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/TransformWithCovariance
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/TwistWithCovariance
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/Vector2d
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/Vector3d
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/Vector4d
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/Vector6d
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/VectorXd
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/Waypoint
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/Wrench
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/commands/LinearAngular6DCommand
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/commands/Motion2D
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/commands/Speed6D
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/geometry/Spline<1>
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/geometry/Spline<3>
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/samples/BodyState
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/samples/DepthMap
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/samples/DistanceImage
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/samples/IMUSensors
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/samples/Joints
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/samples/LaserScan
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/samples/Motion2D
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/samples/Pointcloud
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/samples/PoseWithCovariance
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/samples/Pressure
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/samples/RigidBodyAcceleration
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/samples/RigidBodyState
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/samples/Sonar
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/samples/SonarBeam
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/samples/SonarScan
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/samples/Wrench
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/samples/Wrenches
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/samples/frame/Frame
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/samples/frame/FramePair
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /base/samples/frame/frame_mode_t
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /std/string
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /std/vector</base/Trajectory>
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /std/vector</base/Vector3d>
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /std/vector</base/Waypoint>
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /std/vector</std/string>
+0.498 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /std/vector</uint32_t>
+0.498 [ Info   ][Logger] Loaded RTT TypeKit/Transport '/orogen/base/MQueue' from 'base-transport-mqueue'
+0.529 [ Info   ][TypekitRepository::Import] Loading Typekit waypoint_navigation.
+0.529 [ Info   ][Logger] Loaded RTT TypeKit/Transport 'waypoint_navigation' from 'waypoint_navigation-typekit'
+0.530 [ Info   ][TypekitRepository::Import] Loading Transport Typelib:///orogen/waypoint_navigation.
+0.531 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /std/vector</int32_t>
+0.531 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /waypoint_navigation/controllerPDConfig
+0.531 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /waypoint_navigation/pathTrackerConfig
+0.531 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /waypoint_navigation_lib/NavigationState
+0.531 [ Info   ][Logger] Loaded RTT TypeKit/Transport '/orogen/waypoint_navigation/TYPELIB' from 'waypoint_navigation-transport-typelib'
+0.535 [ Info   ][TypekitRepository::Import] Loading Transport CORBA:///orogen/waypoint_navigation.
+0.535 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /std/vector</int32_t>
+0.535 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /waypoint_navigation/controllerPDConfig
+0.535 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /waypoint_navigation/pathTrackerConfig
+0.535 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /waypoint_navigation_lib/NavigationState
+0.535 [ Info   ][Logger] Loaded RTT TypeKit/Transport '/orogen/waypoint_navigation/CORBA' from 'waypoint_navigation-transport-corba'
+0.539 [ Info   ][TypekitRepository::Import] Loading Transport MQueue:///orogen/waypoint_navigation.
+0.539 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /std/vector</int32_t>
+0.539 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /waypoint_navigation/controllerPDConfig
+0.539 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /waypoint_navigation/pathTrackerConfig
+0.539 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /waypoint_navigation_lib/NavigationState
+0.539 [ Info   ][Logger] Loaded RTT TypeKit/Transport '/orogen/waypoint_navigation/MQueue' from 'waypoint_navigation-transport-mqueue'
+0.591 [ Info   ][TypekitRepository::Import] Loading Typekit aggregator.
+0.591 [ Info   ][Logger] Loaded RTT TypeKit/Transport 'aggregator' from 'aggregator-typekit'
+0.592 [ Info   ][TypekitRepository::Import] Loading Transport Typelib:///orogen/aggregator.
+0.593 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /aggregator/StreamAlignerStatus
+0.593 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /aggregator/TimestampEstimatorStatus
+0.593 [ Info   ][Logger] Loaded RTT TypeKit/Transport '/orogen/aggregator/TYPELIB' from 'aggregator-transport-typelib'
+0.595 [ Info   ][TypekitRepository::Import] Loading Transport CORBA:///orogen/aggregator.
+0.595 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /aggregator/StreamAlignerStatus
+0.595 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /aggregator/TimestampEstimatorStatus
+0.595 [ Info   ][Logger] Loaded RTT TypeKit/Transport '/orogen/aggregator/CORBA' from 'aggregator-transport-corba'
+0.597 [ Info   ][TypekitRepository::Import] Loading Transport MQueue:///orogen/aggregator.
+0.598 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /aggregator/StreamAlignerStatus
+0.598 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /aggregator/TimestampEstimatorStatus
+0.598 [ Info   ][Logger] Loaded RTT TypeKit/Transport '/orogen/aggregator/MQueue' from 'aggregator-transport-mqueue'
+0.690 [ Info   ][TypekitRepository::Import] Loading Typekit odometry.
+0.690 [ Info   ][Logger] Loaded RTT TypeKit/Transport 'odometry' from 'odometry-typekit'
+0.691 [ Info   ][TypekitRepository::Import] Loading Transport Typelib:///orogen/odometry.
+0.692 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /odometry/BodyContactState
+0.692 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /odometry/Configuration
+0.693 [ Info   ][Logger] Loaded RTT TypeKit/Transport '/orogen/odometry/TYPELIB' from 'odometry-transport-typelib'
+0.695 [ Info   ][TypekitRepository::Import] Loading Transport CORBA:///orogen/odometry.
+0.695 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /odometry/BodyContactState
+0.695 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /odometry/Configuration
+0.695 [ Info   ][Logger] Loaded RTT TypeKit/Transport '/orogen/odometry/CORBA' from 'odometry-transport-corba'
+0.699 [ Info   ][TypekitRepository::Import] Loading Transport MQueue:///orogen/odometry.
+0.699 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /odometry/BodyContactState
+0.699 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /odometry/Configuration
+0.699 [ Info   ][Logger] Loaded RTT TypeKit/Transport '/orogen/odometry/MQueue' from 'odometry-transport-mqueue'
+0.742 [ Info   ][TypekitRepository::Import] Loading Typekit velodyne_lidar.
+0.742 [ Info   ][Logger] Loaded RTT TypeKit/Transport 'velodyne_lidar' from 'velodyne_lidar-typekit'
+0.745 [ Info   ][TypekitRepository::Import] Loading Transport Typelib:///orogen/velodyne_lidar.
+0.746 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /velodyne_lidar/GPS_RMC
+0.746 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /velodyne_lidar/MultilevelLaserScan
+0.746 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /velodyne_lidar/VelodyneSensor
+0.746 [ Info   ][Logger] Loaded RTT TypeKit/Transport '/orogen/velodyne_lidar/TYPELIB' from 'velodyne_lidar-transport-typelib'
+0.754 [ Info   ][TypekitRepository::Import] Loading Transport CORBA:///orogen/velodyne_lidar.
+0.754 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /velodyne_lidar/GPS_RMC
+0.754 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /velodyne_lidar/MultilevelLaserScan
+0.754 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /velodyne_lidar/VelodyneSensor
+0.754 [ Info   ][Logger] Loaded RTT TypeKit/Transport '/orogen/velodyne_lidar/CORBA' from 'velodyne_lidar-transport-corba'
+0.760 [ Info   ][TypekitRepository::Import] Loading Transport MQueue:///orogen/velodyne_lidar.
+0.760 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /velodyne_lidar/GPS_RMC
+0.760 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /velodyne_lidar/MultilevelLaserScan
+0.760 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /velodyne_lidar/VelodyneSensor
+0.760 [ Info   ][Logger] Loaded RTT TypeKit/Transport '/orogen/velodyne_lidar/MQueue' from 'velodyne_lidar-transport-mqueue'
+0.821 [ Info   ][TypekitRepository::Import] Loading Typekit envire.
+0.821 [ Info   ][Logger] Loaded RTT TypeKit/Transport 'envire' from 'envire-typekit'
+0.822 [ Info   ][TypekitRepository::Import] Loading Transport Typelib:///orogen/envire.
+0.823 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /RTT/extras/ReadOnlyPointer</std/vector</envire/BinaryEvent>>
+0.823 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /envire/BinaryEvent
+0.823 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /std/vector</envire/BinaryEvent>
+0.823 [ Info   ][Logger] Loaded RTT TypeKit/Transport '/orogen/envire/TYPELIB' from 'envire-transport-typelib'
+0.825 [ Info   ][TypekitRepository::Import] Loading Transport CORBA:///orogen/envire.
+0.826 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /RTT/extras/ReadOnlyPointer</std/vector</envire/BinaryEvent>>
+0.826 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /envire/BinaryEvent
+0.826 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /std/vector</envire/BinaryEvent>
+0.826 [ Info   ][Logger] Loaded RTT TypeKit/Transport '/orogen/envire/CORBA' from 'envire-transport-corba'
+0.828 [ Info   ][TypekitRepository::Import] Loading Transport MQueue:///orogen/envire.
+0.828 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /RTT/extras/ReadOnlyPointer</std/vector</envire/BinaryEvent>>
+0.828 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /envire/BinaryEvent
+0.828 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /std/vector</envire/BinaryEvent>
+0.828 [ Info   ][Logger] Loaded RTT TypeKit/Transport '/orogen/envire/MQueue' from 'envire-transport-mqueue'
+2.245 [ Info   ][Thread] Creating Thread for scheduler=ORO_SCHED_RT, priority=1, CPU affinity=0, with name='orocosrb_18933Corba'
+2.245 [ Warning][Thread] Lowering scheduler type to SCHED_OTHER for non-privileged users..
+2.245 [ Warning][orocosrb_18933Corba] Lowering scheduler type to SCHED_OTHER for non-privileged users..
+2.246 [ Info   ][orocosrb_18933Corba] Thread created with scheduler type 'ORO_SCHED_OTHER', priority 0, cpu affinity 15 and period 0 (PID= 19019 ).
+2.246 [ Info   ][CDataFlowInterface_i::buildChannelOutput] Started orocosrb_18933Corba.
+2.303 [ Info   ][TypekitRepository::Import] Loading Typekit joint_dispatcher.
+2.304 [ Info   ][Logger] Loaded RTT TypeKit/Transport 'joint_dispatcher' from 'joint_dispatcher-typekit'
+2.305 [ Info   ][TypekitRepository::Import] Loading Transport Typelib:///orogen/joint_dispatcher.
+2.306 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /std/vector</joint_dispatcher/DefaultJointConfiguration>
+2.306 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /std/vector</joint_dispatcher/OutputConfiguration>
+2.306 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /std/vector</joint_dispatcher/SingleDispatchConfiguration>
+2.306 [ Info   ][Logger] Loaded RTT TypeKit/Transport '/orogen/joint_dispatcher/TYPELIB' from 'joint_dispatcher-transport-typelib'
+2.310 [ Info   ][TypekitRepository::Import] Loading Transport CORBA:///orogen/joint_dispatcher.
+2.310 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /std/vector</joint_dispatcher/DefaultJointConfiguration>
+2.310 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /std/vector</joint_dispatcher/OutputConfiguration>
+2.310 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /std/vector</joint_dispatcher/SingleDispatchConfiguration>
+2.310 [ Info   ][Logger] Loaded RTT TypeKit/Transport '/orogen/joint_dispatcher/CORBA' from 'joint_dispatcher-transport-corba'
+2.313 [ Info   ][TypekitRepository::Import] Loading Transport MQueue:///orogen/joint_dispatcher.
+2.313 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /std/vector</joint_dispatcher/DefaultJointConfiguration>
+2.313 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /std/vector</joint_dispatcher/OutputConfiguration>
+2.313 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /std/vector</joint_dispatcher/SingleDispatchConfiguration>
+2.313 [ Info   ][Logger] Loaded RTT TypeKit/Transport '/orogen/joint_dispatcher/MQueue' from 'joint_dispatcher-transport-mqueue'
+2.392 [ Info   ][TypekitRepository::Import] Loading Typekit viso2.
+2.392 [ Info   ][Logger] Loaded RTT TypeKit/Transport 'viso2' from 'viso2-typekit'
+2.398 [ Info   ][TypekitRepository::Import] Loading Transport Typelib:///orogen/viso2.
+2.400 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /frame_helper/ResizeAlgorithm
+2.400 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /frame_helper/StereoCalibration
+2.400 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /std/vector</base/Matrix3d>
+2.400 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /viso2/IMAGE_OUTPUT_TYPE
+2.400 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /viso2/StereoOdometerParameters
+2.400 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /viso2/Viso2Info
+2.400 [ Info   ][Logger] Loaded RTT TypeKit/Transport '/orogen/viso2/TYPELIB' from 'viso2-transport-typelib'
+2.412 [ Info   ][TypekitRepository::Import] Loading Transport CORBA:///orogen/viso2.
+2.412 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /frame_helper/ResizeAlgorithm
+2.412 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /frame_helper/StereoCalibration
+2.412 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /std/vector</base/Matrix3d>
+2.412 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /viso2/IMAGE_OUTPUT_TYPE
+2.412 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /viso2/StereoOdometerParameters
+2.412 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /viso2/Viso2Info
+2.412 [ Info   ][Logger] Loaded RTT TypeKit/Transport '/orogen/viso2/CORBA' from 'viso2-transport-corba'
+2.423 [ Info   ][TypekitRepository::Import] Loading Transport MQueue:///orogen/viso2.
+2.423 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /frame_helper/ResizeAlgorithm
+2.423 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /frame_helper/StereoCalibration
+2.423 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /std/vector</base/Matrix3d>
+2.423 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /viso2/IMAGE_OUTPUT_TYPE
+2.423 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /viso2/StereoOdometerParameters
+2.423 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /viso2/Viso2Info
+2.423 [ Info   ][Logger] Loaded RTT TypeKit/Transport '/orogen/viso2/MQueue' from 'viso2-transport-mqueue'
+2.495 [ Info   ][TypekitRepository::Import] Loading Typekit controldev.
+2.495 [ Info   ][Logger] Loaded RTT TypeKit/Transport 'controldev' from 'controldev-typekit'
+2.498 [ Info   ][TypekitRepository::Import] Loading Transport Typelib:///orogen/controldev.
+2.499 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /controldev/FourWheelCommand
+2.499 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /controldev/RawCommand
+2.499 [ Info   ][Logger] Loaded RTT TypeKit/Transport '/orogen/controldev/TYPELIB' from 'controldev-transport-typelib'
+2.506 [ Info   ][TypekitRepository::Import] Loading Transport CORBA:///orogen/controldev.
+2.506 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /controldev/FourWheelCommand
+2.506 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /controldev/RawCommand
+2.506 [ Info   ][Logger] Loaded RTT TypeKit/Transport '/orogen/controldev/CORBA' from 'controldev-transport-corba'
+2.511 [ Info   ][TypekitRepository::Import] Loading Transport MQueue:///orogen/controldev.
+2.511 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /controldev/FourWheelCommand
+2.511 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /controldev/RawCommand
+2.511 [ Info   ][Logger] Loaded RTT TypeKit/Transport '/orogen/controldev/MQueue' from 'controldev-transport-mqueue'
+2.642 [ Info   ][TypekitRepository::Import] Loading Typekit locomotion_control.
+2.642 [ Info   ][CDataFlowInterface_i::buildChannelOutput] Loaded RTT TypeKit/Transport 'locomotion_control' from 'locomotion_control-typekit'
+2.643 [ Info   ][TypekitRepository::Import] Loading Transport Typelib:///orogen/locomotion_control.
+2.644 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /generic_rover_param
+2.644 [ Info   ][CDataFlowInterface_i::buildChannelOutput] Loaded RTT TypeKit/Transport '/orogen/locomotion_control/TYPELIB' from 'locomotion_control-transport-typelib'
+2.648 [ Info   ][TypekitRepository::Import] Loading Transport CORBA:///orogen/locomotion_control.
+2.648 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /generic_rover_param
+2.648 [ Info   ][CDataFlowInterface_i::buildChannelOutput] Loaded RTT TypeKit/Transport '/orogen/locomotion_control/CORBA' from 'locomotion_control-transport-corba'
+2.650 [ Info   ][TypekitRepository::Import] Loading Transport MQueue:///orogen/locomotion_control.
+2.650 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /generic_rover_param
+2.650 [ Info   ][CDataFlowInterface_i::buildChannelOutput] Loaded RTT TypeKit/Transport '/orogen/locomotion_control/MQueue' from 'locomotion_control-transport-mqueue'
+2.684 [ Info   ][TypekitRepository::Import] Loading Typekit platform_driver_pcan.
+2.684 [ Info   ][CDataFlowInterface_i::buildChannelOutput] Loaded RTT TypeKit/Transport 'platform_driver_pcan' from 'platform_driver_pcan-typekit'
+2.689 [ Info   ][TypekitRepository::Import] Loading Transport Typelib:///orogen/platform_driver_pcan.
+2.690 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /platform_driver_pcan/GearMotorParamType
+2.690 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /platform_driver_pcan/PltfCanParams
+2.690 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /std/vector</platform_driver_pcan/AnalogId>
+2.690 [ Info   ][CDataFlowInterface_i::buildChannelOutput] Loaded RTT TypeKit/Transport '/orogen/platform_driver_pcan/TYPELIB' from 'platform_driver_pcan-transport-typelib'
+2.701 [ Info   ][TypekitRepository::Import] Loading Transport CORBA:///orogen/platform_driver_pcan.
+2.701 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /platform_driver_pcan/GearMotorParamType
+2.701 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /platform_driver_pcan/PltfCanParams
+2.701 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /std/vector</platform_driver_pcan/AnalogId>
+2.701 [ Info   ][CDataFlowInterface_i::buildChannelOutput] Loaded RTT TypeKit/Transport '/orogen/platform_driver_pcan/CORBA' from 'platform_driver_pcan-transport-corba'
+2.708 [ Info   ][TypekitRepository::Import] Loading Transport MQueue:///orogen/platform_driver_pcan.
+2.708 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /platform_driver_pcan/GearMotorParamType
+2.708 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /platform_driver_pcan/PltfCanParams
+2.708 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /std/vector</platform_driver_pcan/AnalogId>
+2.708 [ Info   ][CDataFlowInterface_i::buildChannelOutput] Loaded RTT TypeKit/Transport '/orogen/platform_driver_pcan/MQueue' from 'platform_driver_pcan-transport-mqueue'
+2.747 [ Info   ][TypekitRepository::Import] Loading Typekit locomotion_switcher.
+2.747 [ Info   ][CDataFlowInterface_i::buildChannelOutput] Loaded RTT TypeKit/Transport 'locomotion_switcher' from 'locomotion_switcher-typekit'
+2.748 [ Info   ][TypekitRepository::Import] Loading Transport Typelib:///orogen/locomotion_switcher.
+2.748 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /locomotion_switcher/LocomotionMode
+2.748 [ Info   ][CDataFlowInterface_i::buildChannelOutput] Loaded RTT TypeKit/Transport '/orogen/locomotion_switcher/TYPELIB' from 'locomotion_switcher-transport-typelib'
+2.752 [ Info   ][TypekitRepository::Import] Loading Transport CORBA:///orogen/locomotion_switcher.
+2.752 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /locomotion_switcher/LocomotionMode
+2.752 [ Info   ][CDataFlowInterface_i::buildChannelOutput] Loaded RTT TypeKit/Transport '/orogen/locomotion_switcher/CORBA' from 'locomotion_switcher-transport-corba'
+2.754 [ Info   ][TypekitRepository::Import] Loading Transport MQueue:///orogen/locomotion_switcher.
+2.754 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /locomotion_switcher/LocomotionMode
+2.754 [ Info   ][CDataFlowInterface_i::buildChannelOutput] Loaded RTT TypeKit/Transport '/orogen/locomotion_switcher/MQueue' from 'locomotion_switcher-transport-mqueue'
+2.836 [ Info   ][TypekitRepository::Import] Loading Typekit stereo_vo.
+2.836 [ Info   ][CDataFlowInterface_i::buildChannelOutput] Loaded RTT TypeKit/Transport 'stereo_vo' from 'stereo_vo-typekit'
+2.916 [ Info   ][TypekitRepository::Import] Loading Transport Typelib:///orogen/stereo_vo.
+2.917 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /frame_test/CamConf
+2.917 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /frame_test/Config
+2.917 [ Info   ][CDataFlowInterface_i::buildChannelOutput] Loaded RTT TypeKit/Transport '/orogen/stereo_vo/TYPELIB' from 'stereo_vo-transport-typelib'
+2.942 [ Info   ][TypekitRepository::Import] Loading Transport CORBA:///orogen/stereo_vo.
+2.942 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /frame_test/CamConf
+2.942 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /frame_test/Config
+2.942 [ Info   ][CDataFlowInterface_i::buildChannelOutput] Loaded RTT TypeKit/Transport '/orogen/stereo_vo/CORBA' from 'stereo_vo-transport-corba'
+2.951 [ Info   ][TypekitRepository::Import] Loading Transport MQueue:///orogen/stereo_vo.
+2.951 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /frame_test/CamConf
+2.951 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /frame_test/Config
+2.951 [ Info   ][CDataFlowInterface_i::buildChannelOutput] Loaded RTT TypeKit/Transport '/orogen/stereo_vo/MQueue' from 'stereo_vo-transport-mqueue'
+3.060 [ Info   ][TypekitRepository::Import] Loading Typekit camera_base.
+3.061 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /frame_helper/ResizeAlgorithm
+3.061 [ Info   ][CDataFlowInterface_i::buildChannelOutput] Loaded RTT TypeKit/Transport 'camera_base' from 'camera_base-typekit'
+3.068 [ Info   ][TypekitRepository::Import] Loading Transport Typelib:///orogen/camera_base.
+3.071 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /camera/GrabMode
+3.071 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /camera/double_attrib/CamAttrib
+3.071 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /camera/enum_attrib/CamAttrib
+3.071 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /camera/int_attrib/CamAttrib
+3.071 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /camera/str_attrib/CamAttrib
+3.071 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /frame_helper/CameraCalibration
+3.071 [ Info   ][CDataFlowInterface_i::buildChannelOutput] Loaded RTT TypeKit/Transport '/orogen/camera_base/TYPELIB' from 'camera_base-transport-typelib'
+3.091 [ Info   ][TypekitRepository::Import] Loading Transport CORBA:///orogen/camera_base.
+3.091 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /camera/GrabMode
+3.091 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /camera/double_attrib/CamAttrib
+3.091 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /camera/enum_attrib/CamAttrib
+3.091 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /camera/int_attrib/CamAttrib
+3.091 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /camera/str_attrib/CamAttrib
+3.091 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /frame_helper/CameraCalibration
+3.091 [ Info   ][CDataFlowInterface_i::buildChannelOutput] Loaded RTT TypeKit/Transport '/orogen/camera_base/CORBA' from 'camera_base-transport-corba'
+3.104 [ Info   ][TypekitRepository::Import] Loading Transport MQueue:///orogen/camera_base.
+3.104 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /camera/GrabMode
+3.104 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /camera/double_attrib/CamAttrib
+3.104 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /camera/enum_attrib/CamAttrib
+3.104 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /camera/int_attrib/CamAttrib
+3.104 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /camera/str_attrib/CamAttrib
+3.104 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /frame_helper/CameraCalibration
+3.104 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /frame_helper/ResizeAlgorithm
+3.104 [ Info   ][CDataFlowInterface_i::buildChannelOutput] Loaded RTT TypeKit/Transport '/orogen/camera_base/MQueue' from 'camera_base-transport-mqueue'
+3.442 [ Info   ][TypekitRepository::Import] Loading Typekit pancam_360.
+3.443 [ Info   ][CDataFlowInterface_i::buildChannelOutput] Loaded RTT TypeKit/Transport 'pancam_360' from 'pancam_360-typekit'
+3.446 [ Info   ][TypekitRepository::Import] Loading Transport Typelib:///orogen/pancam_360.
+3.447 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /std/vector</base/Vector2d>
+3.447 [ Info   ][CDataFlowInterface_i::buildChannelOutput] Loaded RTT TypeKit/Transport '/orogen/pancam_360/TYPELIB' from 'pancam_360-transport-typelib'
+3.454 [ Info   ][TypekitRepository::Import] Loading Transport CORBA:///orogen/pancam_360.
+3.454 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /std/vector</base/Vector2d>
+3.454 [ Info   ][CDataFlowInterface_i::buildChannelOutput] Loaded RTT TypeKit/Transport '/orogen/pancam_360/CORBA' from 'pancam_360-transport-corba'
+3.460 [ Info   ][TypekitRepository::Import] Loading Transport MQueue:///orogen/pancam_360.
+3.460 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /std/vector</base/Vector2d>
+3.460 [ Info   ][CDataFlowInterface_i::buildChannelOutput] Loaded RTT TypeKit/Transport '/orogen/pancam_360/MQueue' from 'pancam_360-transport-mqueue'
+3.537 [ Info   ][TypekitRepository::Import] Loading Typekit stereo.
+3.537 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /frame_helper/StereoCalibration
+3.537 [ Info   ][CDataFlowInterface_i::buildChannelOutput] Loaded RTT TypeKit/Transport 'stereo' from 'stereo-typekit'
+3.541 [ Info   ][TypekitRepository::Import] Loading Transport Typelib:///orogen/stereo.
+3.543 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /stereo/FeatureConfiguration
+3.543 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /stereo/StereoFeatureArray
+3.543 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /stereo/libElasConfiguration
+3.543 [ Info   ][CDataFlowInterface_i::buildChannelOutput] Loaded RTT TypeKit/Transport '/orogen/stereo/TYPELIB' from 'stereo-transport-typelib'
+3.551 [ Info   ][TypekitRepository::Import] Loading Transport CORBA:///orogen/stereo.
+3.551 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /stereo/FeatureConfiguration
+3.551 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /stereo/StereoFeatureArray
+3.551 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /stereo/libElasConfiguration
+3.551 [ Info   ][CDataFlowInterface_i::buildChannelOutput] Loaded RTT TypeKit/Transport '/orogen/stereo/CORBA' from 'stereo-transport-corba'
+3.560 [ Info   ][TypekitRepository::Import] Loading Transport MQueue:///orogen/stereo.
+3.560 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /frame_helper/StereoCalibration
+3.560 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /stereo/FeatureConfiguration
+3.560 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /stereo/StereoFeatureArray
+3.560 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /stereo/libElasConfiguration
+3.560 [ Info   ][CDataFlowInterface_i::buildChannelOutput] Loaded RTT TypeKit/Transport '/orogen/stereo/MQueue' from 'stereo-transport-mqueue'
+3.623 [ Info   ][TypekitRepository::Import] Loading Typekit dem_generation.
+3.623 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /frame_helper/CameraCalibration
+3.623 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /velodyne_lidar/MultilevelLaserScan
+3.623 [ Info   ][CDataFlowInterface_i::buildChannelOutput] Loaded RTT TypeKit/Transport 'dem_generation' from 'dem_generation-typekit'
+3.632 [ Info   ][TypekitRepository::Import] Loading Transport Typelib:///orogen/dem_generation.
+3.634 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /std/vector</telemetry_telecommand/messages/Telecommand>
+3.634 [ Info   ][TypekitRepository::Import] Registered new 'Typelib' transport for /telemetry_telecommand/messages/Telemetry
+3.634 [ Info   ][CDataFlowInterface_i::buildChannelOutput] Loaded RTT TypeKit/Transport '/orogen/dem_generation/TYPELIB' from 'dem_generation-transport-typelib'
+3.652 [ Info   ][TypekitRepository::Import] Loading Transport CORBA:///orogen/dem_generation.
+3.652 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /std/vector</telemetry_telecommand/messages/Telecommand>
+3.652 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for /telemetry_telecommand/messages/Telemetry
+3.652 [ Info   ][CDataFlowInterface_i::buildChannelOutput] Loaded RTT TypeKit/Transport '/orogen/dem_generation/CORBA' from 'dem_generation-transport-corba'
+3.667 [ Info   ][TypekitRepository::Import] Loading Transport MQueue:///orogen/dem_generation.
+3.667 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /frame_helper/CameraCalibration
+3.667 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /std/vector</telemetry_telecommand/messages/Telecommand>
+3.667 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /telemetry_telecommand/messages/Telemetry
+3.667 [ Info   ][TypekitRepository::Import] Registered new 'MQueue' transport for /velodyne_lidar/MultilevelLaserScan
+3.668 [ Info   ][CDataFlowInterface_i::buildChannelOutput] Loaded RTT TypeKit/Transport '/orogen/dem_generation/MQueue' from 'dem_generation-transport-mqueue'

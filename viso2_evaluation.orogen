@@ -27,9 +27,11 @@ task_context "Task" do
     # transition to a setup where all components use a configuration step.
     needs_configuration
 
-    # A configuration property (here, a std::string). Its value can be retrieved
-    # in the C++ code with # _config_value.get() and _config_value.set(new_value).
-    property "config_value", "/std/string"
+    property("skip_first_n", "int", 0)
+        .doc("Number of odometry samples to skip before starting to evaluate.")
+
+    property("align_streams", "bool", false)
+        .doc("Use stream aligner")
 
     # An input port, i.e. an object from which the component gets data from
     # other components' outputs
@@ -42,18 +44,9 @@ task_context "Task" do
 
     input_port("groundtruth_pose", "/base/samples/RigidBodyState").
         doc "pose coming from component giving groundtruth pose"
-
-    input_port("groundtruth_pose_not_aligned", "/base/samples/RigidBodyState").
-        doc "pose coming from component giving groundtruth pose and not aligned by the stream_aligner"
-
+    
     input_port("reset", "bool").
         doc "reset the pose comming from groundtruth"
-
-    transformer do
-        max_latency 1.0
-        align_port "groundtruth_pose", 0.01
-        align_port "odometry_pose", 0.5
-    end
 
     # An output port, i.e. an object to which the component pushes data so that
     # it is transmitted to other components' inputs
@@ -78,18 +71,24 @@ task_context "Task" do
 
     output_port("ground_truth_heading", "double").
         doc "heading angle from vicon pose"
+    output_port("position_error", "double").
+        doc "position error norm" 
+    output_port("heading_error", "double").
+        doc "heading error" 
     output_port("travelled_distance", "double").
         doc "travelled distance" 
     output_port("perc_error", "double").
         doc "error percentage as error norm over travelled distance" 
+    output_port("lag", "double").
+        doc "lag between the odometry and current time (in seconds)" 
     #-- added for vo tests and logging
 
-    # If you want that component's updateHook() to be executed when the "input"
-    # port gets data, uncomment this and comment the 'periodic' line
-    # port_driven "input"
-    # port_driven 'odometry_pose'
-    # port_driven
-    # By default, the task will be periodic with a period of 0.1
-    periodic 0.1
+    stream_aligner do
+        max_latency 10
+        align_port "odometry_pose", 0.01
+        align_port "groundtruth_pose", 0.001
+    end
+    
+    port_driven
 end
 

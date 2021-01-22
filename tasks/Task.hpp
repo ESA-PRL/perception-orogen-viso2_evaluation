@@ -28,15 +28,20 @@ tasks/Task.cpp, and will be put in the viso2_evaluation namespace.
     {
 	friend class TaskBase;
     protected:
-        bool gt_initial, reset;
-        base::samples::RigidBodyState gt_pose, gt_initial_pose, odo_pose, gt_pose_not_aligned;;
+        bool gt_initial, reset, odo_initial;
+        base::Time current_time;
+        base::samples::RigidBodyState gt_pose, gt_initial_pose;
+        Eigen::Affine3d odo_initial_pose_inverse;
         base::samples::RigidBodyState odo_in_world_pose, diff_pose, delta_gt_pose, gt_previous_pose;
-        double accum_distance, error_norm, error_perc; 
+        double accum_distance, error_norm, error_perc, heading_error; 
+        int count_odo;
 
-    protected:
-        virtual void groundtruth_poseTransformerCallback(const base::Time &ts, const ::base::samples::RigidBodyState &groundtruth_pose_sample);
+        virtual void groundtruth_poseCallback(const base::Time &ts, const ::base::samples::RigidBodyState &groundtruth_pose_sample);
 
-        virtual void odometry_poseTransformerCallback(const base::Time &ts, const ::base::samples::RigidBodyState &odometry_pose_sample);
+        virtual void odometry_poseCallback(const base::Time &ts, const ::base::samples::RigidBodyState &odometry_pose_sample);
+
+        static Eigen::Vector3d quat2eul(Eigen::Quaterniond q);
+        static double angDiff(double d);
 
     public:
         /** TaskContext constructor for Task
@@ -44,13 +49,6 @@ tasks/Task.cpp, and will be put in the viso2_evaluation namespace.
          * \param initial_state The initial TaskState of the TaskContext. Default is Stopped state.
          */
         Task(std::string const& name = "viso2_evaluation::Task");
-
-        /** TaskContext constructor for Task
-         * \param name Name of the task. This name needs to be unique to make it identifiable for nameservices.
-         * \param engine The RTT Execution engine to be used for this task, which serialises the execution of all commands, programs, state machines and incoming events for a task.
-         * 
-         */
-        Task(std::string const& name, RTT::ExecutionEngine* engine);
 
         /** Default deconstructor of Task
          */
@@ -113,8 +111,6 @@ tasks/Task.cpp, and will be put in the viso2_evaluation namespace.
          * before calling start() again.
          */
         void cleanupHook();
-
-        void computeOutputs();
     };
 }
 

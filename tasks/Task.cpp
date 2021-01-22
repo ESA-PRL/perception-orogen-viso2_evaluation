@@ -9,11 +9,6 @@ Task::Task(std::string const& name)
 {
 }
 
-Task::Task(std::string const& name, RTT::ExecutionEngine* engine)
-    : TaskBase(name, engine)
-{
-}
-
 Task::~Task()
 {
 }

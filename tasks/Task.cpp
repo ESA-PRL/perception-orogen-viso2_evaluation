@@ -179,7 +179,7 @@ void Task::computeOutputs()
         error_norm = sqrt(pow(diff_pose.position[0],2)+
                           pow(diff_pose.position[1],2)+
                           pow(diff_pose.position[2],2));
-        error_perc = error_norm/accum_distance;
+        error_perc = error_norm/accum_distance*100;
         // output percentage error
         _perc_error.write(error_perc);
 
